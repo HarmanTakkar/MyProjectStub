@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+        
+        <link href='..\css\post.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+        <link href='..\css\font.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Dancing+Script" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>        
+    </style>     
+</head>
+<body>
+        <div class="header">
+            <input class="topButtons" type="button" value="Sign Up" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">
+            <input class="topButtons" type="button" value="Sign In" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+            <a id="pageTitle" class="logo-title" style="color:blue;">ScriBBler</a>
+            <p class="middleText">Explore, Imagine, Create</p>
+
+        </div>
+
+    
+
+    <div class="blogContent">
+        <div id="blogTitle" class="blogTite">
+            <h id="blogTitleNew" contenteditable="false">The legacy of Jimi Hendrix</h>
+        </div>
+    </div>
+
+    <div class="blogAuthor">
+
+        <!-- Insert code for Edit/Save button and  -->
+        <span id="edit">
+            <button onclick="myFunction(this);" class="editBtn" id="editBtn" value="editing">Edit <span class="glyphicon glyphicon-edit"></span></button>
+        </span>
+        <p>Jimi</p>
+    </div>
+
+    <div class="blogText">
+        <p id="blogBody" contenteditable="false">
+                Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's left hand would play and the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more than one guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb 42] Aledort wrote: "In rock guitar, there are but two eras — before Hendrix and after Hendrix."
+        </p>
+    </div>
+
+    <!-- Insert code for Like button, Comment button, Comment box here-->
+    <div class="likeBody">
+        <button class="likeBtn" onClick="onClick()" id="like" value="liked">
+          <span class="glyphicon glyphicon-thumbs-up"></span> Like
+        </button>
+        <p id="response"><a id="clicks">Be the first one to like this!</a></p>
+        <textarea id="userComments" placeholder="Leave a comment..." value="" rows="4" cols="80" ></textarea>
+        <br>
+        <button type="button" onclick="comment()" class="commentBtn" id="comments">Comment</button>
+        <div id="myCommentBox"> 
+            <div id="addEventNames"></div>
+        </div>
+    </div>
+        
+    
+         <div>
+
+    	<!-- Insert code for Sign In modal here -->
+        <div id="id01" class="modal">
+          <form class="modal-content" action="/action_page.php">
+            <div class="container">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+              <h1 style="margin-right:65%;">Welcome Back!</h1>
+              <hr style="margin-right:66%;">
+
+              <label for="email"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="email" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <div class="clearfix" style="margin-bottom: 10px;">
+                <button type="submit" class="signinbtn" style="color: white;">Sign In</button>
+              </div>
+                
+              <div id="member">
+                  <b>Not a member?</b>
+                  <button type="button" class="btn btn-link" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><b>Sign Up</b></button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+    </div>
+
+    <div>
+
+    	<!-- Insert code for Sign Up modal here -->
+        <div id="id02" class="modal">
+          <form class="modal-content" action="/action_page.php">
+            <div class="container">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close">&times;</span>
+              <h1 style="margin-right:65%;">Get Started</h1>
+              <hr style="margin-right:66%;">
+              <label for="text"><b>Full Name</b></label>
+              <input type="text" placeholder="Enter Full Name" name="text" required>
+
+              <label for="email"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="email" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <label for="psw-repeat"><b>Confirm Password</b></label>
+              <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+
+              <div class="clearfix">
+                <button type="submit" class="signupbtn" style="color: white;">Sign Up</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+    </div>
+    
+    
+    <script src="..\js\post.js" defer></script>
+    <script src="..\js\header.js">             
+    </script>
+    
+    </body>
+</html>

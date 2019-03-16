@@ -1,0 +1,122 @@
+/* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
+the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border:0px;
+}
+button:hover {
+    opacity:1;
+}
+input.topButtons {
+     width: 90px;
+     padding: 10px;
+     cursor: pointer;
+     font-weight: 500;
+     font-size: 90%;
+     background: #0000ff;
+     border:0px;
+     color: #fff;
+     float: right;                  
+     margin: 10px 10px 0px 0px;
+     font-family:/* Arial, Helvetica,*/ sans-serif;
+}
+
+.logo-title {
+    font-family: 'Dancing Script';
+    font-size: 40px;
+    font-weight: bold;
+    margin: auto;
+    margin: 10px 10px 0px 10px;    
+}
+h1{
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+}
+.middleText{
+    font-family: 'Dancing Script', cursive;
+    margin-top: 0;
+    margin: 0 0 0px 10px;
+}
+.signinbtn,.signupbtn {
+  width: 100%;
+}
+.container {
+  padding: 16px;    
+}
+.modal {
+  padding-left: 35%;
+  padding-right: 35%;
+  border-radius: 4px;
+  display: none;
+  position: absolute;    
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  transition: all 0.3s linear;
+  background: rgba(0,0,0,0.5);
+
+
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 30%;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  
+}
+#member{
+    margin-left: 25%;
+}
+.close {
+  position: absolute;
+  right: 35px;
+  top:15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 300px) {
+  .signinbtn,.signupbtn {
+     width: 100%;
+  }
+}
+

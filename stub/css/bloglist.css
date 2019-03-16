@@ -1,0 +1,167 @@
+.post1 {
+    position: relative;
+    width: 40%;
+    height: 25%;
+    background: #E8E8E8;
+    box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 7%;
+    margin-top: 10px;
+    float:left;
+    border-radius: 15px;
+    overflow:hidden;
+}
+.post2 {
+    position: relative;
+    width: 40%;
+    height: 25%;
+    background: #E8E8E8;
+    box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
+    margin-bottom: 20px;
+    margin-right: 7%;
+    margin-top: 10px;
+    float:right;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.post3 {
+    position: relative;
+    width: 40%;
+    height: 25%;
+    background: #E8E8E8;
+    box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 7%;
+    margin-top: 10px;
+    float:left;
+    border-radius: 15px;
+    overflow: hidden;
+   
+}
+.post4 {
+    position: relative;
+    width: 40%;
+    height: 25%;
+    background: #E8E8E8;
+    box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
+    margin-bottom: 20px;
+    margin-right: 7%;
+    margin-top: 10px;
+    float:right;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.post5 {
+    position: relative;
+    width: 40%;
+    height: 25%;
+    background: #E8E8E8;
+    box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
+    margin-right: 30%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 30%;
+    border-radius: 15px;
+    overflow: hidden;
+    
+}
+.post-left {
+        width: 15%;            
+        max-width: 15%;
+        height: 25%; 
+        display:table-cell;
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bold;
+        color: #000;
+        background-color: #fff;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        overflow: hidden;
+        padding-top: 8.5%;
+        padding-bottom: 8.5%;
+
+}
+.post-content {
+        width: 75%; 
+        height: 25%;
+        display: table-cell;
+        text-align: left;
+        background-color: #E8E8E8;
+        color: #000000;
+        border-radius: 0 15px 15px 0;
+        padding: 0 20px; 
+        overflow: hidden;
+        margin-bottom: 40px;
+    
+}
+
+.post-title{
+    margin-top: 20px;
+    font-family: 'Itim', cursive;
+    font-weight: bold;
+    color: #2b312b;
+    font-size: 25px;
+    height: 25px;
+    }
+.post-more {
+    float: right;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.post-desc{
+    height: 55px;
+    margin-bottom: 0 !important;
+}
+.delete{
+    float:right;
+    margin-top: 10px;
+    
+}
+#nav{
+    float:right;
+    margin-bottom: 1px;
+    position: sticky;
+}
+#nav:hover{
+    cursor: pointer;
+}
+.delete:hover{
+    cursor: pointer;
+    
+}
+#dl1{
+    display: none;
+}
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0 !important;
+    color: #fff;
+    background-color: orange;
+    background-size: 2000% 2000%;
+}
+.allPostsContainer {
+    margin-top:20px;
+    height: 100%;
+    width: 100%;
+
+}
+@media screen and (max-width: 1100px) {
+  .post-title {
+    overflow: hidden;
+    }
+}
+@media screen and (max-width: 1300px) {
+  #nav {
+    position: sticky;
+      overflow: hidden;
+    }
+}

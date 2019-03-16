@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Place all CSS for header in this file -->
+    <link href='css\header.css' rel='stylesheet' type='text/css'>
+    <link href='font.css' rel='stylesheet' type='text/css'>
+
+    <!-- Place all CSS for the rest of the elements in this file -->
+    <link href='css\index.css' rel='stylesheet' type='text/css'>
+
+	<!-- Place all CSS for fonts in this file -->
+    <link href='css\font.css' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">        
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Dancing+Script" />
+
+</head>
+<body>
+    <div id="main-container-div">
+
+        <div class="header">
+            <input class="topButtons" type="button" value="Sign Up" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">
+            <input class="topButtons" type="button" value="Sign In" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+            <a id="pageTitle" class="logo-title" style="color:blue;">ScriBBler</a>
+            <p class="middleText">Explore, Imagine, Create</p>
+
+        </div>
+           
+        <div class="postButtons">
+
+        	<!-- Insert code for All Posts & Create Post button here -->
+            <a href="html\bloglist.html"><input type="button" id="allPosts" value="All Posts"></a>
+            <input type="button" id="createPost" value="Create Post" onclick="document.getElementById('id03').style.display='block'" style="width:auto;">
+
+        </div>
+    </div>
+
+    <div>
+
+    	<!-- Insert code for Sign In modal here -->
+        <div id="id01" class="modal">
+          <form class="modal-content" action="/action_page.php">
+            <div class="container">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+              <h1>Welcome Back!</h1>
+              <hr>
+
+              <label for="email"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="email" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <div class="clearfix" style="margin-bottom: 10px;">
+                <button type="submit" class="signinbtn">Sign In</button>
+              </div>
+                
+              <div id="member">
+                  <b>Not a member?</b>
+                  <button type="button" class="btn btn-link" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><b>Sign Up</b></button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+    </div>
+
+    <div>
+
+    	<!-- Insert code for Sign Up modal here -->
+        <div id="id02" class="modal">
+          <form class="modal-content" action="/action_page.php">
+            <div class="container">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close">&times;</span>
+              <h1>Get Started</h1>
+              <hr>
+              <label for="text"><b>Full Name</b></label>
+              <input type="text" placeholder="Enter Full Name" name="text" required>
+
+              <label for="email"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="email" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <label for="psw-repeat"><b>Confirm Password</b></label>
+              <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+
+              <div class="clearfix">
+                <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+    </div>
+
+    <div>
+
+    	<!-- Insert code for Create Post modal here -->
+        <div>
+
+    	<!-- Insert code for Sign In modal here -->
+        <div id="id03" class="modal">
+          <form class="modal-content" action="/action_page.php">
+            <div class="container">
+            <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close">&times;</span>
+              <h1>Create Post Here!</h1>
+              <hr>
+
+              <label for="text"><b>Post Title</b></label>
+              <input type="text" placeholder="Enter Title Name" name="text" required>
+
+              <label for="text"><b>Post Author</b></label>
+              <input type="text" placeholder="Enter Author Name" name="text" required>
+
+              <label for="text"><b>Post Text</b></label>
+              <input type="text" placeholder="Enter Text" name="text" required>
+
+              <div class="clearfix" style="margin-bottom: 10px;">
+                <button type="submit" class="signinbtn">Create</button>
+              </div>
+                
+            </div>
+          </form>
+        </div>
+
+
+    </div>
+
+    </div>
+
+	<!-- Place all Javascript for header in this file -->
+	<script src="js\header.js"></script>
+	<!-- Place all Javascript for rest of the elements in this file -->
+    <script src="js\index.js"></script>
+
+</body>
+</html>
